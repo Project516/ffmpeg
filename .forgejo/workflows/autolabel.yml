@@ -24,7 +24,7 @@ jobs:
           repo-token: ${{ secrets.AUTOLABELER_TOKEN }}
           sync-labels: true
       - name: Label by title-match
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const script = require('.forgejo/labeler/labeler.js')
