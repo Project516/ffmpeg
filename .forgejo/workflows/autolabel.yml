@@ -15,7 +15,7 @@ jobs:
     if: ${{ github.event.sender.login != 'ffmpeg-devel' }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Label by file-changes
         uses: actions/labeler@v6
         if: ${{ forge.event_name == 'pull_request_target' }}
